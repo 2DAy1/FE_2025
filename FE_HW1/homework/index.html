@@ -1,16 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  <title>Responsive</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional Developers Health Care</title>
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-  <!-- Your code here! Good luck! -->
+
+<div id="top"></div>
+
+<header class="header">
+  <div class="header-container">
+    <a href="#top" class="logo">
+      <img src="img/logo.png" alt="Logo">
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Professional Developers<br>Health Care</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde voluptas perspiciatis praesentium velit.</p>
+      <div class="hero-icons">
+        <img src="img/icons/cardiology.jpg" alt="icon">
+        <img src="img/icons/laboratory.jpg" alt="icon">
+        <img src="img/icons/radiology.jpg" alt="icon">
+      </div>
+    </div>
+    <div class="hero-image"></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="img/tools.png" alt="Clinic Tools">
+    </div>
+    <div class="about-text">
+      <h2>About Clinic</h2>
+      <h4>PROFESSIONAL CARE</h4>
+      <ul>
+        <li><strong>Medical Consulting</strong><br>Lorem ipsum dolor sit amet consectetur.</li>
+        <li><strong>Laboratory analysis</strong><br>Lorem ipsum dolor sit amet consectetur.</li>
+        <li><strong>Diagnostics</strong><br>Lorem ipsum dolor sit amet consectetur.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="services-container">
+    <h2>How we can help you</h2>
+    <p class="services-subtitle">READ MORE ABOUT OUR SERVICES</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="img/icons/oftalmology.jpg" alt="Ophthalmology">
+        <h3>Ophthalmology</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="service-card">
+        <img src="img/icons/dentistry.jpg" alt="Dentistry">
+        <h3>Dentistry</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="service-card">
+        <img src="img/icons/cardiology.jpg" alt="Cardiology">
+        <h3>Cardiology</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="service-card">
+        <img src="img/icons/pediatrics.jpg" alt="Pediatrics">
+        <h3>Pediatrics</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="service-card">
+        <img src="img/icons/laboratory.jpg" alt="Laboratory">
+        <h3>Laboratory</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="service-card">
+        <img src="img/icons/radiology.jpg" alt="Radiology">
+        <h3>Radiology</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="offers" id="pricing">
+  <div class="offers-container">
+    <h2>Our Special Offers</h2>
+    <p class="offers-subtitle">START TO BE HEALTHY TODAY</p>
+    <div class="offers-cards">
+      <div class="offer-card">
+        <h3>Allergy Check</h3>
+        <p class="price">$ 255</p>
+        <p class="treatments">10 treatments</p>
+        <ul>
+          <li>Allergy Test</li>
+          <li>Consultation</li>
+          <li>Treatments</li>
+          <li>10 Procedures</li>
+          <li>Test Results</li>
+
+        </ul>
+        <button>Get Now</button>
+      </div>
+      <div class="offer-card highlight">
+        <h3>Eye Checkup</h3>
+        <p class="price">$ 108</p>
+        <p class="treatments">3 treatments</p>
+        <ul>
+          <li>Allergy Test</li>
+          <li>Consultation</li>
+          <li>Treatments</li>
+          <li>10 Procedures</li>
+          <li>Test Results</li>
+        </ul>
+        <button>Get Now</button>
+      </div>
+      <div class="offer-card">
+        <h3>Dental Care</h3>
+        <p class="price">$ 320</p>
+        <p class="treatments">6 treatments</p>
+        <ul>
+          <li>Allergy Test</li>
+          <li>Consultation</li>
+          <li>Treatments</li>
+          <li>10 Procedures</li>
+          <li>Test Results</li>
+        </ul>
+        <button>Get Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="appointment" id="contact">
+  <div class="appointment-container">
+    <div class="appointment-image">
+      <img src="img/contact_image.jpg" alt="Doctor">
+    </div>
+    <div class="appointment-form">
+      <h2>Make An Appointment</h2>
+      <p>AND WE WILL CONTACT YOU</p>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone">
+        <input type="date" required>
+        <select required>
+          <option value="">Choose Department</option>
+          <option value="cardiology">Cardiology</option>
+          <option value="pediatrics">Pediatrics</option>
+          <option value="dental">Dental</option>
+        </select>
+        <input type="text" placeholder="Subject">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <p>Copyright © 2021</p>
+</footer>
+
+
+<a href="#top" class="scroll-top" title="Back to top">↑</a>
+
 </body>
 </html>
