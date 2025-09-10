@@ -1,3 +1,7 @@
+:root {
+  --header-height: 72px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +12,11 @@ body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+section:target {
+  scroll-margin-top: var(--header-height);
 }
 
 .header {
@@ -406,7 +415,7 @@ body {
     grid-template-columns: 1fr;
     flex-direction: column;
     background-position: top center;
-    background-size: cover;
+    background-size: 80%;
     text-align: center;
   }
 
@@ -425,5 +434,74 @@ body {
   .offers-cards {
     flex-direction: column;
     align-items: center;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .offer-card.highlight { transform: none; }
+}
+
+/* Mobile 414px */
+@media (max-width: 414px) {
+  .header-container {
+    padding: 0.8rem 1rem;
+  }
+  .nav-list {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .nav-list li a {
+    font-size: 12px;
+  }
+
+  .hero {
+    padding-top: 90px;
+  }
+  .hero-container {
+    padding: 40px 16px;
+    background-size: 65%;
+    background-position: right top;
+  }
+  .hero-text {
+    max-width: 100%;
+  }
+  .hero-text h1 {
+    font-size: 26px;
+  }
+  .hero-icons img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .about {
+    padding: 60px 16px;
+  }
+
+  .services {
+    padding: 60px 16px;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offers {
+    padding: 60px 0;
+  }
+  .offers-cards {
+    gap: 16px;
+  }
+  .offer-card {
+    max-width: 100%;
+    padding: 40px 24px;
+  }
+
+  .appointment {
+    padding: 60px 16px;
   }
 }

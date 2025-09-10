@@ -162,12 +162,15 @@
         <input type="email" placeholder="Email" required>
         <input type="tel" placeholder="Phone">
         <input type="date" required>
-        <select required>
-          <option value="">Choose Department</option>
-          <option value="cardiology">Cardiology</option>
-          <option value="pediatrics">Pediatrics</option>
-          <option value="dental">Dental</option>
-        </select>
+        <input type="text" placeholder="Choose Department" list="departments" required>
+        <datalist id="departments">
+          <option value="Cardiology"></option>
+          <option value="Pediatrics"></option>
+          <option value="Dental"></option>
+          <option value="Laboratory"></option>
+          <option value="Radiology"></option>
+          <option value="Ophthalmology"></option>
+        </datalist>
         <input type="text" placeholder="Subject">
         <button type="submit">Submit</button>
       </form>
