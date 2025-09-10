@@ -1,3 +1,28 @@
+// Minimal flat config for browser JS without external plugins
+export default [
+  {
+    files: ["**/*.js"],
+    languageOptions: {
+      ecmaVersion: 2021,
+      sourceType: "script",
+      globals: {
+        window: true,
+        document: true,
+        fetch: true,
+        Node: true,
+        alert: true,
+        console: true
+      }
+    },
+    rules: {
+      semi: ["error", "always"],
+      quotes: ["error", "single", { avoidEscape: true }],
+      "no-unused-vars": ["warn", { args: "none" }],
+      "no-undef": "error"
+    }
+  }
+];
+
 /* eslint.config.js — налаштування для flat config без модулів */
 
 /** @type {import('eslint').FlatConfig[]} */
